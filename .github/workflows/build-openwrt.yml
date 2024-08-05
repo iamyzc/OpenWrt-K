@@ -22,24 +22,24 @@
 #SOFTWARE.
 #=============================================================================#
 name: Build OpenWrt-K
-# on:
-#   schedule:
-#     - cron: '0 4 * * *'
- # push:
- #   branches:
- #     - main
- #   paths:
- #     - '.github/**'
- #     - 'files/**'
- #     - '!README.md'
-#  pull_request:
-#            branches:
-#              - main
-#            paths:
-#              - 'config/**'
-#              - '.github/**'
-#              - 'files/**'
-#              - '!README.md'
+on:
+  # schedule:
+  #   - cron: '0 4 * * *'
+  push:
+   branches:
+     - main
+   paths:
+     - '.github/**'
+     - 'files/**'
+     - '!README.md'
+  # pull_request:
+  #          branches:
+  #            - main
+  #          paths:
+  #            - 'config/**'
+  #            - '.github/**'
+  #            - 'files/**'
+  #            - '!README.md'
   workflow_dispatch:
 permissions:
   actions: write
